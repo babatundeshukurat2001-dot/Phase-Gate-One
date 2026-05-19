@@ -2,34 +2,36 @@ import java.util.Scanner;
 import java.util.Random;
  public class NumberGuessingApp {
 public static void main(String[] args){
-
-    Scanner input = new scanner(System.in);
-    Random random = new Random();
-    int guess = random.nextInt(100)+1;
-    int NumberOfGuess = 0;
-System.out.print("Enter a number ");
-int userinput = input.nextInt();
+    Scanner input = new Scanner(System.in);
+    Random rand = new Random();
+    int gues = rand.nextInt(100) + 1;
+    int userinput;
 
     for(int count = 0; count < 5; count++){
-System.out.print("Enter number between 1 to 100");
+    System.out.print("Enter number between 1 to 100: ");
+    userinput = input.nextInt();
 
-int userinput = input.nextInt();
-    if(userinput <= -1);
-System.out.print("Don't count");
-}
-    else if(userinput > number){
-System.out.print("Number is too high");
-}
-    else if(userinput < number){
-System.out.print("Number is low");
-}
-else if(userinput == number){
-System.out.print("stop");
-}
-//condition to terminate loop
-    if (userinput == -1){
-System.out.print("Terminate");
-}
+    if(userinput <= -1){
+        System.out.println("Don't count");
+    }
+    else if(userinput > guessnumber){
+        System.out.println("Number is too high");
+    }
+    else if(userinput < guessnumber){
+        System.out.println("Number is low");
+    }
+    else {
+        System.out.println("Stop - you got it!");
+        break;
+    }
+  //condition to terminate loop  
+    if(userinput == -1){
+        System.out.println("Terminate");
+        break;
+    }
+ 
+
+   
     else if(userinput == 1){
 System.out.print("Legendary");
 }
@@ -38,7 +40,7 @@ System.out.print("Legendary");
 System.out.print("Excellent");
 }
 
-    else if(userinput == 3 $$ == 4){
+    else if(userinput == 3 || userinput == 4){
 System.out.print("Good");
 }
     
@@ -54,7 +56,7 @@ System.out.print("Better luck next time!!!");
 
 }
 }
-
+}
     
 
 

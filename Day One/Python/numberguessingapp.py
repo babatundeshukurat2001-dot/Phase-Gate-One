@@ -1,35 +1,32 @@
 import random
 
 while True:
-    wrong = random.randInt(1,100)
+    target = random.randint(1, 100)
     guesses = 0
 
-    print("Guess any number between 1 and 100: ")
-
-
-while True:
-    guess = int(input("Enter your guessed number: "))
-    guesses += 1
-
-if guess == wrong:
-    print("Congratulations you guessed the number right! ")
-
-    break;
-
-elif guess > wrong:
-    print("Your number is too high,try again")
-
-    break;
+    print("Guess any number between 1 and 100:")
     
-
-
-if(guess == 1):
-    print("Legendary")
-elif(guess == 2):
-    print("Excellent")
-elif(guess == 3 and guess == 4):
-    print("Good")
-elif(guess == 5):
-    print("Close!")
-else:
-    print("Better luck next time")
+    while True:
+        guess = int(input("Enter your guessed number: "))
+        guesses += 1
+        
+        if guess == target:
+            print("Congratulations you guessed the number right!")
+            break
+        elif guess > target:
+            print("Your number is too high, try again")
+        else:
+            print("Your number is too low, try again")
+    
+    if guesses == 1:
+        print("Legendary")
+    elif guesses == 2:
+        print("Excellent")
+    elif 3 <= guesses <= 4:
+        print("Good")
+    elif guesses == 5:
+        print("Close!!")
+    
+    play_again = input("Play again? yes/no: ")
+    if play_again.lower() != 'yes':
+        break
