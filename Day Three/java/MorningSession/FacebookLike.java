@@ -1,16 +1,7 @@
-//public class FacebookLike.java{
-   // public static void main(String[] args){
+public class FacebookLike{
 
+public static String [] TheFacebookLikeDoesNotExit(){
+    return new String []{};
 
-
-
-
-
-
-
-
-
-
-
-//}
-//}
+}
+}

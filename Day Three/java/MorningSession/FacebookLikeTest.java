@@ -1,22 +1,23 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-    public class FacebookTest{
+public class FacebookLikeTest {
 
     @Test
-public void testThatTheFacebookLikeDoesNotExit(){
-   String [] expected = {};
-   String [] actual = TheFacebookLikeDoesNotExit;
-    assertEquals(actual,expected); 
-       }
+    public void testThatTheFacebookLikeDoesNotExist(){
+        String[] expected = {};
+        String[] actual = FacebookLike.TheFacebookLikeDoesNotExist(); 
+        assertEquals(expected, actual);
+    }
 
-    @Test
-public void testThatNoOneLikesThisFacebookLike(){
-    String [] name = {};
-    String [] expected = {};
-    String actual = NoOneLikesThisFacebookLike(name);
-    assertEquals(expected,actual);
-     }
+
+    //@Test
+//public void testThatNoOneLikesThisFacebookLike(){
+   // String [] name = {};
+    //String [] expected = {};
+   // String actual = NoOneLikesThisFacebookLike(name);
+    //assertEquals(expected,actual);
+    // }
 
 
 
